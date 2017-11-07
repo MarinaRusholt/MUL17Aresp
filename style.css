@@ -41,15 +41,32 @@ nav a{
 nav a:hover {
 	background-color: #212121;
 }
+/*drop down menu styles*/
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+/*display dropdowns on hover */
+nav ul li:hover > ul {
+	display: inherit;
+	background-color: #AA898A; 
+	width: 150px;
+}
 /* Responsive styles with CSS media query*/
 @media all and (max-width : 768px) {
 	
 	h1{
-    font-size: smaller;
+    font-size: large;
     margin-top: 0px; 
+	text-align: center;
 }
 footer {
 	display: none;
 	}
+nav ul li {
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
 	/* end media query */
 }
